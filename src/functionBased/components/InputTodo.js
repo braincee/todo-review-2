@@ -14,16 +14,6 @@ const InputTodo = (props) => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { addTodoProps } = props;
-    (inputText.title.trim()) 
-      addTodoProps(inputText.title);
-      setInputText({
-        title: '',
-      });
-  };
-
   return (
     <form onSubmit={handleSubmit} className="form-container">
       <input
