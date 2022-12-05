@@ -17,14 +17,11 @@ const InputTodo = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { addTodoProps } = props;
-    if (inputText.title.trim()) {
+    (inputText.title.trim()) 
       addTodoProps(inputText.title);
       setInputText({
         title: '',
       });
-    } else {
-      return addTodo; 
-    }
   };
 
   return (
