@@ -26,7 +26,7 @@ class InputTodo extends Component {
         title: '',
       });
     } else {
-      return true;
+      return addTodo;
     }
   };
 

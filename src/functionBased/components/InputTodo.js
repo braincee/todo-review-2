@@ -23,7 +23,7 @@ const InputTodo = (props) => {
         title: '',
       });
     } else {
-      return true;
+      return addTodo; 
     }
   };
 
