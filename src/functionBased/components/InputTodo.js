@@ -23,7 +23,7 @@ const InputTodo = (props) => {
         title: '',
       });
     } else {
-      alert('Please write item');
+      return('Please write item');
     }
   };
 
