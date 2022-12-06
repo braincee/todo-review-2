@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import Header from './Header';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
@@ -32,15 +31,6 @@ const TodoContainer = () => {
 
   const delTodo = (id) => {
     setTodos([...todos.filter((todo) => todo.id !== id)]);
-  };
-
-  const addTodoItem = (title) => {
-    const newTodo = {
-      id: uuidv4(),
-      title,
-      completed: false,
-    };
-    setTodos([...todos, newTodo]);
   };
 
   const setUpdate = (updatedTitle, id) => {
