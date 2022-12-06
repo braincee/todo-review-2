@@ -73,7 +73,7 @@ const TodoContainer = () => {
             <div className="container">
               <div className="inner">
                 <Header />
-                <InputTodo addTodoProps={addTodoItem} />
+                <InputTodo />
                 <TodosList
                   todos={todos}
                   handleChangeProps={handleChange}
